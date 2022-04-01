@@ -14,7 +14,7 @@ export default function BookCards() {
   }, []);
 
   return (
-    <div>
+    <div className="bookcardmaindiv">
       {bookData.map((book) => {
         return (
           <div className="bookcardmain">

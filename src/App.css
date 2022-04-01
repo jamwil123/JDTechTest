@@ -15,6 +15,12 @@
   margin-top: 10px;
   margin-right: 10px;
 }
+.bookcardmaindiv{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .bookcardmain {
   display: flex;
   flex-direction: column;
@@ -39,6 +45,8 @@ img {
 }
 .bookdesc {
   padding-top: 10px;
+  flex-shrink: 2;
+  margin: 10px;
 }
 .book-title {
   margin-bottom: 10px;
@@ -82,6 +90,10 @@ img {
   .burgerMain {
     display: none;
   }
+  .bookcardmaindiv {
+    flex-direction: row;
+    
+  }
 }
 
 @media (min-width: 500px) and (max-width: 1200px) {
@@ -89,4 +101,5 @@ img {
   .bookicon {
     display: none;
   }
+  
 }
