@@ -6,7 +6,7 @@ export default function BurgerMenu() {
     const [burgerMenu, setBurgerMenu] = useState(false);
 
   return (
-    <div>
+    <div className="burgerMain">
       <GiHamburgerMenu className="burgermenu" onClick={()=>{setBurgerMenu((prev)=>!prev)}}/>
       {burgerMenu ? <div>bbbbb</div> : <div/>}
     </div>

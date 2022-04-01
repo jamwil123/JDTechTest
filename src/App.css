@@ -1,8 +1,21 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.bookcardmain{
+.titleMain{
+  display: flex;
+  justify-content: center;
+}
+.bookicon{
+  height: 5em;
+  width: 5em;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.bookcardmain {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -11,7 +24,7 @@
   align-items: center;
 }
 
-.mainTitle{
+.mainTitle {
   padding: 10px;
   font-size: 4em;
 }
@@ -24,18 +37,15 @@ img {
   height: 12em;
   width: 12em;
 }
-.bookdesc{
+.bookdesc {
   padding-top: 10px;
-  
-
 }
-.book-title{
+.book-title {
   margin-bottom: 10px;
 }
 
-.bookimg{
-  padding:10px;
-
+.bookimg {
+  padding: 10px;
 }
 
 .socialsIcons {
@@ -45,13 +55,38 @@ img {
   padding-bottom: 2em;
 }
 
-.icon{
+.icon {
   padding: 10px;
   height: 5em;
   width: 5em;
 }
 
-.burgermenu{
+.burgermenu {
   height: 5em;
   width: 5em;
+}
+
+.pageselector {
+  justify-content: center;
+  display: flex;
+  padding-left: 70px;
+}
+
+.pageoption {
+  padding: 10px;
+  border-style: solid;
+  padding: 15px;
+}
+
+@media (min-width: 1200px) {
+  .burgerMain {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  .pageselector,
+  .bookicon {
+    display: none;
+  }
 }
