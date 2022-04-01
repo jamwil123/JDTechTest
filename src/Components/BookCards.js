@@ -27,7 +27,7 @@ export default function BookCards() {
             </div>
             <div>Pages: {book.volumeInfo.pageCount}</div>
             <div className="bookdesc">
-              {book.volumeInfo.description.slice(0, 200) + "..."}
+              {book.volumeInfo.description.slice(0, 140) + "..."}
             </div>
           </div>
         );
