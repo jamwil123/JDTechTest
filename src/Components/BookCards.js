@@ -1,14 +1,42 @@
 import React, { useEffect, useState } from "react";
+import classnames from '../utils/classnames.json'
 
 
 export default function BookCards({bookData}) {
- 
+    const [className, setClassName] = useState(classnames)
+
+    useEffect(() => {
+        const data = window.localStorage.getItem('HIGHLITED_BOOK_CARD')
+        setClassName(JSON.parse(data))
+    }, [])
+    
+  
+
+    useEffect(()=>{
+        window.localStorage.setItem('HIGHLITED_BOOK_CARD', JSON.stringify(className))
+    },[className])
+
+    const clickedBook = (i) => {
+        setClassName((prev)=>{
+            const newObj = {...prev}
+            if(prev[`${i}`] == "bookcardmain"){
+                newObj[`${i}`] = "bookcardmainclicked"
+                localStorage.getItem(`bookcardmain${i}`);
+                return newObj
+            }
+            newObj[`${i}`] = "bookcardmain"
+            localStorage.getItem(`bookcardmain${i}`);
+            return newObj
+
+    })
+}
+
 
   return (
     <div className="bookcardmaindiv">
-      {bookData.map((book) => {
+      {bookData.map((book, i) => {
         return (
-          <div className="bookcardmain">
+          <div className={className[`${i}`]} onClick={()=>{clickedBook(i)}}>
             <div>
               <img
                 className="bookimg"

@@ -141,6 +141,15 @@ img {
   margin: 1em;
 }
 
+.bookcardmainclicked{
+  display: flex;
+    flex-direction: row;
+    border-style: solid;
+    align-items: center;
+  background-color: gray;
+
+}
+
 @media (min-width: 1200px) {
   .burgerMain {
     display: none;
