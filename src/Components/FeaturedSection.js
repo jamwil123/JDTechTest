@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-
-export default function BookCards({bookData}) {
- 
-
+export default function FeaturedSection({ bookData }) {
   return (
-    <div className="bookcardmaindiv">
-      {bookData.map((book) => {
-        return (
-          <div className="bookcardmain">
+    <div>
+      <div>Featured</div>
+      {bookData.map((book, i) => {
+        if (i <= 2)
+          return (
             <div>
-              <img
-                className="bookimg"
-                src={book.volumeInfo.imageLinks.thumbnail}
-              />
-            </div>
-
-            <div className="cardtext">
               <div className="book title">{book.volumeInfo.title}</div>
               <div>
                 {book.volumeInfo.authors.map((author) => {
@@ -24,13 +15,11 @@ export default function BookCards({bookData}) {
                 })}
               </div>
               <div>Pages: {book.volumeInfo.pageCount}</div>
-
               <div className="bookdesc">
                 {book.volumeInfo.description.slice(0, 140) + "..."}
               </div>
             </div>
-          </div>
-        );
+          );
       })}
     </div>
   );
