@@ -8,6 +8,7 @@ import PageSelector from './Components/PageSelector';
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import FeaturedSection from './Components/FeaturedSection';
+import FeaturedMobile from './Components/FeaturedMobile'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
      <BurgerMenu className='burgermenuMain'/>
      <PageSelector/>
      <IntroSection/>
+     <FeaturedMobile bookData={bookData} />
      <div className='cardSectionMain'>
      <BookCards bookData={bookData}/>
      <FeaturedSection bookData={bookData} />

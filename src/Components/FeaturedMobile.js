@@ -2,12 +2,16 @@ import React from "react";
 
 export default function FeaturedSection({ bookData }) {
   return (
-    <div className='featuredMainDiv'>
+    <div className='featuredMobileMainDiv'>
       <div className="featuredText">Featured</div>
       {bookData.map((book, i) => {
         if (i <= 1)
           return (
-            <div className="featuredCards">
+            <div className="featuredMobileCards">
+            <img
+              className="bookimg"
+              src={book.volumeInfo.imageLinks.thumbnail}
+            />
               <div className="book title">{book.volumeInfo.title}</div>
               <div>
                 {book.volumeInfo.authors.map((author) => {
@@ -18,10 +22,7 @@ export default function FeaturedSection({ bookData }) {
               <div className="bookdesc">
                 {book.volumeInfo.description.slice(0, 140) + "..."}
               </div>
-              <img
-              className="bookimg"
-              src={book.volumeInfo.imageLinks.thumbnail}
-            />
+              
             </div>
           );
       })}

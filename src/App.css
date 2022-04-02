@@ -3,11 +3,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .cardSectionMain {
   display: flex;
   flex-direction: row;
+  padding-right: 3em;
+  padding-left: 3em;
+}
+.featuredMainDiv {
+  border-style: solid;
+  width: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 80em;
+}
+.featuredText{
+  font-size: 2em;
+
+}
+
+.featuredCards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  margin: 1em;
 }
 
 .titleMain{
@@ -23,6 +46,7 @@
 .bookcardmaindiv{
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -34,6 +58,7 @@
   margin: 50px;
   border-style: solid;
   align-items: center;
+  
 }
 
 .mainTitle {
@@ -43,6 +68,8 @@
 
 .introText {
   padding: 10px;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 img {
@@ -95,6 +122,25 @@ img {
   padding: 15px;
 }
 
+
+
+
+.featuredMobileMainDiv{
+  max-width: 20em;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+}
+
+.featuredMobileCards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  margin: 1em;
+}
+
 @media (min-width: 1200px) {
   .burgerMain {
     display: none;
@@ -118,12 +164,25 @@ img {
     align-items: center;
     max-width: 10em;
   }
+  .featuredMobileMainDiv{
+    display: none;
+  }
+  
 }
+
+
 
 @media (min-width: 500px) and (max-width: 1200px) {
   .pageselector,
   .bookicon {
     display: none;
   }
+  .featuredMainDiv{
+    display: none;
+  }
+  .cardSectionMain{
+    flex-direction: column;
+  }
+  
   
 }
