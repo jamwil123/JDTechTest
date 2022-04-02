@@ -33,6 +33,17 @@
   margin: 1em;
 }
 
+.bookcardmainclicked{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 50px;
+  border-style: solid;
+  align-items: center;
+  background-color: gray;
+
+}
+
 .titleMain{
   display: flex;
   justify-content: center;
@@ -62,6 +73,7 @@
 }
 
 .mainTitle {
+  display: flex;
   padding: 10px;
   font-size: 4em;
 }
@@ -141,14 +153,9 @@ img {
   margin: 1em;
 }
 
-.bookcardmainclicked{
-  display: flex;
-    flex-direction: row;
-    border-style: solid;
-    align-items: center;
-  background-color: gray;
 
-}
+
+
 
 @media (min-width: 1200px) {
   .burgerMain {
@@ -165,6 +172,15 @@ img {
     border-style: solid;
     align-items: center;
   }
+  .bookcardmainclicked{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    align-items: center;
+    background-color: gray;
+  
+  }
+  
 
   .cardtext{
     display: flex;
@@ -176,6 +192,9 @@ img {
   .featuredMobileMainDiv{
     display: none;
   }
+
+  
+  
   
 }
 
@@ -192,6 +211,11 @@ img {
   .cardSectionMain{
     flex-direction: column;
   }
+  .socialsTitleClass{
+    display: none;
+  }
+  
+  
   
   
 }

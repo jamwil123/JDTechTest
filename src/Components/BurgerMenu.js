@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import PageSelector from "./PageSelector";
 
 export default function BurgerMenu() {
 
@@ -8,7 +9,7 @@ export default function BurgerMenu() {
   return (
     <div className="burgerMain">
       <GiHamburgerMenu className="burgermenu" onClick={()=>{setBurgerMenu((prev)=>!prev)}}/>
-      {burgerMenu ? <div>bbbbb</div> : <div/>}
+      {burgerMenu ? <p></p>: <p>Hello</p>}
     </div>
   );
 }

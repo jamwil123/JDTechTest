@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaBookOpen} from "react-icons/fa"
+import Socials from './Socials'
 
 export default function Title() {
   return (
