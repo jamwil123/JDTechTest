@@ -17,6 +17,7 @@ This project makes use of the following dependencies:
         "react-icons": "^4.3.1",
         "react-scripts": "5.0.0",
         "web-vitals": "^2.1.4"
+        },
 
 # Local Setup
 
@@ -27,32 +28,45 @@ above required dependencies.
 
 [Follow this link to download Node.js with npm](https://nodejs.org/en/download/current/).
 
-Minimum version recommended: Node v16.14.0
+Minimum version recommended: Node v16.13.0
 
 ## Clone repo
 
 Clone the repo from here
 
+```
+
 https://github.com/jamwil123/JDTechTest
 
+```
 
 using the command
 
+```
+
 git clone https://github.com/jamwil123/JDTechTest
 
+```
 
 ## Install Dependencies
 
 To install all neccessary dependencies, navigate to the respository folder and run the following command:
 
+```
+
 npm install
 
+```
 
 ## Once Cloned and Installed
 
 Once the repo has been cloned and all dependencies are installed, simply type the following command into your terminal to run a local version of the app in the browser.
 
+```
+
 npm start
 
+```
 
 ## Enjoy!
+```
