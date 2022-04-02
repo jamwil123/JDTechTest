@@ -3,6 +3,7 @@ Tech Test
 Dependencies
 This project makes use of the following dependencies:
 
+```
 "dependencies": {
         "@fortawesome/free-regular-svg-icons": "^6.1.1",
         "@fortawesome/free-solid-svg-icons": "^6.1.1",
