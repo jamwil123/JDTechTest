@@ -6,8 +6,8 @@ export default function BookCards({bookData}) {
     const [className, setClassName] = useState(classnames)
 
     useEffect(() => {
-        const data = window.localStorage.getItem('HIGHLITED_BOOK_CARD')
-        setClassName(JSON.parse(data))
+    
+    
     }, [])
     
   
